@@ -1,3 +1,3 @@
 # My Porfolio Website
 
-A basic hotel portfolio website built with Sveltekit.
+A basic portfolio website built with Sveltekit.
