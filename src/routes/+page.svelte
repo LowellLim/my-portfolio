@@ -168,6 +168,9 @@
 		border-radius: 1rem;
 		line-height: 1.5;
 		color: #eff6ff;
+		div {
+			margin-bottom: 0.5rem;
+		}
 	}
 	.work__container {
 		display: flex;
@@ -199,6 +202,9 @@
 			color: #64748b;
 			text-decoration: underline;
 		}
+	}
+	.bio-container div {
+		margin-bottom: 0.2rem;
 	}
 	.bio-container:last-child {
 		margin-bottom: 1rem;
