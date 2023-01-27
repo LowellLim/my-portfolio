@@ -41,7 +41,7 @@
 					</svg>
 				</a>
 				<a
-					href="ttps://gitfront.io/r/Lowell/KTtoRxqvNWAB/hotel-frontend/"
+					href="https://gitfront.io/r/Lowell/KTtoRxqvNWAB/hotel-frontend/"
 					class="work--url"
 					target="blank"
 				>
@@ -96,7 +96,11 @@
 			<h2>CV</h2>
 			<div class="work__container">
 				<span>CV: </span>
-				<a href="/src/lib/cv/Lowell-CV.docx" class="work--url" target="blank">
+				<a
+					href="https://drive.google.com/uc?export=download&id=1kg5TfLC8mM1PNEDyzkaNT2ZvpnpMCC1t"
+					class="work--url"
+					target="blank"
+				>
 					<span class="sr-only">CV</span><svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
@@ -138,9 +142,6 @@
 </div>
 
 <style lang="scss">
-	.home {
-		min-height: 100%;
-	}
 	.profile-container {
 		height: 30rem;
 		display: flex;
@@ -160,7 +161,7 @@
 		text-align: center;
 	}
 	.work__box {
-		background-color: #1E40AF;
+		background-color: #1e40af;
 		padding: 1rem 1.5rem;
 		box-shadow: 0 3px 6px hsla(0, 0%, 15%);
 		box-shadow: 0 2px 4px hsla(0, 0%, 12%);

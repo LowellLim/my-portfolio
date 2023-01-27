@@ -14,6 +14,6 @@
 		--tw-gradient-to: #3b82f6;
 		--tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to) 25%;
 		background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
-		height: inherit;
+		min-height: 100%;
 	}
 </style>
