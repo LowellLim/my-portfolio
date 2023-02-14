@@ -52,8 +52,7 @@
 		overflow: hidden;
 		white-space: nowrap;
 		width: 0;
-		animation: typing 3s steps(30, end) forwards;
-		animation-delay: 0.8s;
+		animation: typing 3s 0.8s steps(30, end) forwards;
 	}
 	.intro--red {
 		color: global.$secondary-text-color;
@@ -70,24 +69,8 @@
 	.intro--red,
 	.intro--name,
 	.intro--desc {
-		animation: fadeInAndOut 2s;
-		animation-delay: 0.8s;
-	}
-	@keyframes fadeInAndOut {
-		0% {
-			display: none;
-			opacity: 0;
-			transform: translateY(2.1rem);
-		}
-		1% {
-			display: block;
-			opacity: 0;
-		}
-		100% {
-			display: block;
-			opacity: 1;
-			transform: translateY(0);
-		}
+		opacity: 0;
+		@include global.fadeIn(2s, 0.8s);
 	}
 
 	@keyframes typing {

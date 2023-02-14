@@ -1,3 +1,22 @@
+<script lang="ts">
+	let InnerHeight: number;
+
+	function reveal() {
+		let reveals = document.querySelectorAll('.contact');
+
+		for (let i = 0; i < reveals.length; i++) {
+			let elementTop = reveals[i].getBoundingClientRect().top;
+			let elementVisible = 200;
+
+			if (elementTop < InnerHeight - elementVisible) {
+				reveals[i].classList.add('fadeIn');
+			}
+		}
+	}
+</script>
+
+<svelte:window on:scroll={reveal} bind:innerHeight={InnerHeight} />
+
 <section class="contact">
 	<h1 class="contact--title">Get In Touch</h1>
 	<p class="contact--desc">
@@ -14,6 +33,7 @@
 <style lang="scss">
 	@use '../../styles/global.scss';
 	.contact {
+		opacity: 0;
 		min-height: 50vh;
 		max-width: 300px;
 		margin: 0px auto 100px;
@@ -50,7 +70,7 @@
 		margin-top: 50px;
 		&:hover {
 			background-color: #bef264;
-            color: #365314;
+			color: #365314;
 		}
 	}
 	@media (min-width: 1024px) {

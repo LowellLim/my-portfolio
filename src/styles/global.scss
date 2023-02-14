@@ -5,3 +5,24 @@ $title-font-size: clamp(40px, 5vw, 60px);
 
 $sm-height: 50vh;
 $md-height: 100vh;
+
+@mixin fadeIn($duration: 1.5s, $delay: 0s) {
+	animation: fadeInKey $duration $delay 1 forwards;
+}
+
+@keyframes fadeInKey {
+	0% {
+		display: none;
+		opacity: 0;
+		transform: translateY(2.1rem);
+	}
+	// 1% {
+	// 	display: block;
+	// 	opacity: 0;
+	// }
+	100% {
+		display: block;
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

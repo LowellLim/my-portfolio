@@ -6,8 +6,12 @@
 	<slot />
 </body>
 
-<style type="scss">
+<style lang="scss">
+	@use '../styles/global.scss';
 	body {
 		background-color: #1a1712;
+	}
+	:global(.fadeIn) {
+		@include global.fadeIn;
 	}
 </style>

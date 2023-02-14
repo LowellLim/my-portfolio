@@ -1,10 +1,27 @@
 <script lang="ts">
 	import ParadiseSpa from '$lib/images/paradise-spa.jpg';
 	import SweetIcon from '$lib/images/sweet-icon-laundry.jpg';
+
+	let InnerHeight: number;
+
+	function reveal() {
+		let reveals = document.querySelectorAll('.work--wrapper');
+
+		for (let i = 0; i < reveals.length; i++) {
+			let elementTop = reveals[i].getBoundingClientRect().top;
+			let elementVisible = 200;
+
+			if (elementTop < InnerHeight - elementVisible) {
+				reveals[i].classList.add('fadeIn');
+			}
+		}
+	}
 </script>
 
+<svelte:window on:scroll={reveal} bind:innerHeight={InnerHeight} />
+
 <section class="work">
-	<h1 class="work--title">Work</h1>
+	<h1 class="work--title">My Work</h1>
 	<div class="work--detail">
 		<figure class="work--wrapper paradise-wrapper">
 			<img class="work--thumb" src={ParadiseSpa} alt="Paradise Spa Hotel" />
@@ -95,6 +112,7 @@
 		max-width: 1536px;
 	}
 	.work--wrapper {
+		opacity: 0;
 		text-align: center;
 		min-width: 200px;
 		max-width: 400px;
@@ -122,6 +140,7 @@
 			z-index: 1;
 		}
 	}
+
 	.paradise-wrapper {
 		&::after {
 			background: #64748b;
