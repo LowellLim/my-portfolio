@@ -13,7 +13,7 @@
 				<h3 class="intro--red">Full Stack Developer</h3>
 			</header>
 			<p class="intro--desc">
-				I am a full-stack developer in Malaysia, have develop Web, Mobile, Desktop apps and
+				I am a full-stack developer in Malaysia, have develop and maintain Web, Mobile, Desktop apps and
 				services. Previously was a C# .NET Developer worked with a few companys, and is switching to
 				Javascript/Typescript.
 			</p>

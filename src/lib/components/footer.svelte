@@ -1,6 +1,6 @@
 <footer class="footer">
 	Created By Me:
-	<a href="https://github.com/LowellLim/my-portfolio"
+	<a href="https://github.com/LowellLim/my-portfolio" target="_blank" rel="noreferrer"
 		><span class="sr-only">My Portfolio on GitHub</span><svg
 			viewBox="0 0 16 16"
 			class="github-icon"
@@ -19,9 +19,9 @@
 		font-size: 1rem;
 		color: global.$primary-text-color;
 		background-color: #292524;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.sr-only {
 		position: absolute;
@@ -35,7 +35,7 @@
 		border-width: 0;
 	}
 	.github-icon {
-        margin-left: 10px;
+		margin-left: 10px;
 		width: 1.25rem;
 		height: 1.25rem;
 		color: global.$primary-text-color;
