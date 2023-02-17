@@ -5,7 +5,7 @@
 	let InnerHeight: number;
 
 	function reveal() {
-		let reveals = document.querySelectorAll('.work--wrapper');
+		let reveals = document.querySelectorAll('.work__wrapper');
 
 		for (let i = 0; i < reveals.length; i++) {
 			let elementTop = reveals[i].getBoundingClientRect().top;
@@ -21,14 +21,14 @@
 <svelte:window on:scroll={reveal} bind:innerHeight={InnerHeight} />
 
 <section class="work">
-	<h1 class="work--title">My Work</h1>
-	<div class="work--detail">
-		<figure class="work--wrapper paradise-wrapper">
-			<img class="work--thumb" src={ParadiseSpa} alt="Paradise Spa Hotel" />
+	<h1 class="work__title">My Work</h1>
+	<div class="work__detail">
+		<figure class="work__wrapper work--paradise-background-color">
+			<img class="work__thumbnail" src={ParadiseSpa} alt="Paradise Spa Hotel" />
 			<figcaption>
 				<h3>Paradise SPA Hotel</h3>
 				<a
-					class="work--button"
+					class="work__button"
 					href="https://www.paradisespahotel.com.my"
 					target="_blank"
 					rel="noreferrer"
@@ -53,12 +53,12 @@
 				>
 			</figcaption>
 		</figure>
-		<figure class="work--wrapper sweet-icon-wrapper">
-			<img class="work--thumb" src={SweetIcon} alt="Sweet Icon Laundry" />
+		<figure class="work__wrapper work--sweet-icon-background-color">
+			<img class="work__thumbnail" src={SweetIcon} alt="Sweet Icon Laundry" />
 			<figcaption>
 				<h3>Sweet Icon Laundry</h3>
 				<a
-					class="work--button"
+					class="work__button"
 					href="https://sweet-icon-laundry.vercel.app/"
 					target="_blank"
 					rel="noreferrer"
@@ -95,23 +95,24 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
+		&__title {
+			font-size: global.$title-font-size;
+			color: global.$white-color;
+			text-align: center;
+		}
+		&__detail {
+			display: grid;
+			align-items: center;
+			justify-items: center;
+			gap: 2rem;
+			margin-top: 5rem;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 1536px;
+		}
 	}
-	.work--title {
-		font-size: global.$title-font-size;
-		color: global.$title-color;
-		text-align: center;
-	}
-	.work--detail {
-		display: grid;
-		align-items: center;
-		justify-items: center;
-		gap: 2rem;
-		margin-top: 5rem;
-		margin-left: auto;
-		margin-right: auto;
-		max-width: 1536px;
-	}
-	.work--wrapper {
+
+	.work__wrapper {
 		opacity: 0;
 		text-align: center;
 		min-width: 200px;
@@ -141,19 +142,19 @@
 		}
 	}
 
-	.paradise-wrapper {
+	.work--paradise-background-color {
 		&::after {
 			background: #64748b;
 			mix-blend-mode: multiply;
 		}
 	}
-	.sweet-icon-wrapper {
+	.work--sweet-icon-background-color {
 		&::after {
 			background: #6acebb;
 			mix-blend-mode: multiply;
 		}
 	}
-	.work--thumb {
+	.work__thumbnail {
 		background-size: cover;
 		background-position: center;
 		transform: scale(1);
@@ -175,7 +176,7 @@
 		transition: 0.45s ease-in-out;
 		z-index: 2;
 	}
-	.work--button {
+	.work__button {
 		margin: 0 auto;
 		font-size: 18px;
 		padding: 1.2rem;
@@ -207,14 +208,15 @@
 	@media (min-width: 1024px) {
 		.work {
 			min-height: global.$md-height;
+			&__detail {
+				grid-template-columns: repeat(3, 1fr);
+			}
 		}
-		.work--detail {
-			grid-template-columns: repeat(3, 1fr);
-		}
+
 		figcaption {
 			opacity: 0;
 		}
-		.work--button {
+		.work__button {
 			background-color: initial;
 			&:hover {
 				background-color: #6e07f3;

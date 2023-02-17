@@ -3,10 +3,10 @@
 </script>
 
 <div class="navbar">
-	<div class="navbar__container">
+	<div class="navbar--container">
 		{#each navItems as item}
 			<h4>
-				<a class="navbar--item" href={item.href}>{item.label}</a>
+				<a class="navbar__item" href={item.href}>{item.label}</a>
 			</h4>
 		{/each}
 		<a href="https://github.com/LowellLim/my-portfolio" target="blank">
@@ -27,7 +27,7 @@
 	.navbar {
 		display: flex;
 		justify-content: center;
-		.navbar__container {
+		.navbar--container {
 			display: flex;
 			justify-content: space-around;
 			align-items: center;
@@ -36,7 +36,7 @@
 			color: #ecfeff;
 		}
 	}
-	.navbar--item:hover {
+	.navbar__item:hover {
 		color: #164e63;
 		border-bottom: 3px solid #164e63;
 	}
