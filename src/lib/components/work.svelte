@@ -22,6 +22,7 @@
 
 <section class="work">
 	<h1 class="work__title">My Work</h1>
+	<p class="work__note">Note: using budget cloud service, first load will be slow</p>
 	<div class="work__detail">
 		<figure class="work__wrapper work--paradise-background-color">
 			<img class="work__thumbnail" src={ParadiseSpa} alt="Paradise Spa Hotel" />
@@ -109,6 +110,9 @@
 			margin-left: auto;
 			margin-right: auto;
 			max-width: 1536px;
+		}
+		&__note {
+			color: global.$light-grey;
 		}
 	}
 

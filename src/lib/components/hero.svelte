@@ -13,9 +13,12 @@
 				<h3 class="intro--red intro--animation">Full Stack Developer</h3>
 			</header>
 			<p class="intro__desc intro--animation">
-				I am a full-stack developer in Malaysia, have develop and maintain Web, Mobile, Desktop apps
-				and services. Previously was a C# .NET Developer worked with a few companys, and is
-				switching to Javascript/Typescript.
+				I have around ten years of professional experience in software development, have
+				developed and maintained Web, Mobile, Desktop applications and services.
+				My skills include front-end and back-end development, mobile and desktop
+				application development. I am interested in
+				finding new technologies, framework and libraries and use the most suitable tools for
+				developing projects and resolving technical issues.
 			</p>
 		</div>
 	</div>
