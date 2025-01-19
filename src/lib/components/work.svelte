@@ -60,7 +60,7 @@
 				<h3>Sweet Icon Laundry</h3>
 				<a
 					class="work__button"
-					href="https://sweet-icon-laundry.vercel.app/"
+					href="https://www.sweeticonlaundry.com.my"
 					target="_blank"
 					rel="noreferrer"
 					><span>Visit Website</span><span class="icon"
